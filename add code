@@ -1,0 +1,18 @@
+fun main(){
+    var car=Car("Subaru","MPG","Black",8)
+    car.carry(12)
+
+ }
+
+
+class Car(var make:String,var model:String,var color:String,var capacity:Int) {
+     fun carry(people: Int) {
+
+         if (people >= capacity) {
+
+             println("carrying $people passengers")
+         } else {
+             var y = people - capacity
+             println("Over capacity by $y people")
+         }
+     }
